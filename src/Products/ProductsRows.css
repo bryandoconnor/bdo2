@@ -1,0 +1,20 @@
+.products-column {
+  height: 300px;
+}
+
+.products-column2 {
+  height: 300px;
+  padding: 20px 0px;
+}
+
+.products-heading {
+  color: #fff;
+  font-family: 'Bangers', cursive;
+  text-shadow: 0 4px 7px #000;
+}
+
+.products-paragraph {
+  color: #000;
+  font-family: 'Average Sans', sans-serif;
+  font-size: 15px;
+}

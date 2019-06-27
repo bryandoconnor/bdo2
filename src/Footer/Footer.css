@@ -1,0 +1,22 @@
+.footer {
+  background-color: #000;
+  padding: 10px;
+}
+
+p.footer {
+  margin: 0px;
+  padding: 10px;
+}
+
+.footLink {
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Ranchers';
+}
+
+.footLink:hover {
+  color: orange;
+  text-decoration: none;
+  transition-duration: .8s;
+}

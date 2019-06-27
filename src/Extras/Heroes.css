@@ -1,0 +1,54 @@
+.AboutHero {
+  background-image: url("https://bryandoconnor.s3-us-west-2.amazonaws.com/images/FriendsHero.jpg");
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.GalleryHero {
+  background-image: url("https://bryandoconnor.s3-us-west-2.amazonaws.com/images/GalleryHero.jpg");
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.IndexHero {
+  background-image: url("https://bryandoconnor.s3-us-west-2.amazonaws.com/images/IndexHero.jpg");
+  background-size: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width:1199px) {
+  .IndexHero {
+    height: 600px;
+  }
+}
+
+@media (max-width:991px) {
+  .IndexHero {
+    height: 400px;
+  }
+}
+
+@media (max-width:767px) {
+  .IndexHero {
+    height: 350px;
+  }
+}
+
+@media (max-width:575px) {
+  .IndexHero {
+    height: 300px;
+  }
+}
+
+.ProductsHero {
+  background-image: url("https://bryandoconnor.s3-us-west-2.amazonaws.com/images/ProductsHero.jpg");
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 400px;
+}

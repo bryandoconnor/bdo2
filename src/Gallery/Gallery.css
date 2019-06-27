@@ -1,0 +1,97 @@
+.gallery-column {
+  margin: 20px auto;
+  padding: 0;
+  height: 100px;
+}
+
+.gallery-display:hover {
+  cursor: pointer;
+}
+
+.gallery-icon {
+  box-shadow: 2px 2px 10px #000;
+  display: inline-block;
+  padding: 100px 30px;
+  height: 75%;
+  width: 75%;
+}
+
+.gallery-icon:hover {
+  box-shadow: 2px 2px 10px #888;
+}
+
+.gallery-link {
+  display: inline-block;
+  height: 100%;
+  margin: 0;
+  background-color: transparent;
+  box-shadow: 2px 2px 5px #999;
+}
+
+.gallery-link:hover {
+  box-shadow: 4px 4px 10px #555;
+}
+
+.gallery-overlay {
+  background-color: #000;
+  height: 100%;
+  left: 0px;
+  opacity: 0.5;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.gallery-overlay:hover {
+  cursor: pointer;
+}
+
+.gallery-row {
+  padding: 30px;
+}
+
+.gallery-text {
+  color: #78c6db;
+  text-shadow: 2px 2px 10px #000;
+}
+
+.gallery-text-box {
+  border: solid 1px #8c4141;
+  padding: 5px 30px;
+  position: fixed;
+  right: 1%;
+  bottom: 10%;
+  background-color: #000;
+  opacity: .8;
+}
+
+.image-full {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px #000;
+  display: block;
+  margin: 0px auto;
+  max-height: 75%;
+  max-width: 70%;
+  padding: 3px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+  height: inherit;
+  width: inherit;
+  padding: 2px;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.image-thumbnail:hover {
+  cursor: pointer;
+}

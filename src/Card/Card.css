@@ -1,0 +1,54 @@
+.card {
+  background-color: #ddd;
+  box-shadow: 2px 2px 7px #888;
+  height: 250px;
+  margin: 10px auto 30px auto;
+  width: 220px;
+}
+
+.card:hover {
+  box-shadow: 4px 4px 14px #555;
+}
+
+.card-body {
+  display: inline-block;
+  height: 170px;
+  padding: 10px;
+  width: 100%;
+}
+
+.card-button {
+  border-radius: 180px;
+  box-shadow: 2px 2px 0 0 #000;
+  font-size: 10px;
+  margin: 0px auto;
+  padding: 5px 12px;
+}
+
+.card-link {
+  display: block;
+}
+
+.card-padding {
+  padding: 0px 0px 5px 0px;
+}
+
+.card-text {
+  font-family: 'Average Sans', sans-serif;
+  font-size: 10px;
+  text-align: left;
+}
+
+.card-title {
+  color: #000;
+  font-family: 'Bangers', cursive;
+  font-size: 20px;
+}
+
+.card-top {
+  background-color: red;
+  display: inline-block;
+  height: 80px;
+  margin: 0;
+  width: 100%;
+}
