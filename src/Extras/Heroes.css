@@ -6,12 +6,24 @@
   height: 500px;
 }
 
+@media (max-width:575px) {
+  .AboutHero {
+    height: 300px;
+  }
+}
+
 .GalleryHero {
   background-image: url("https://bryandoconnor.s3-us-west-2.amazonaws.com/images/GalleryHero.jpg");
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   height: 400px;
+}
+
+@media (max-width:575px) {
+  .GalleryHero {
+    height: 300px;
+  }
 }
 
 .IndexHero {
@@ -41,7 +53,7 @@
 
 @media (max-width:575px) {
   .IndexHero {
-    height: 300px;
+    height: 250px;
   }
 }
 
@@ -51,4 +63,10 @@
   background-position: center center;
   background-repeat: no-repeat;
   height: 400px;
+}
+
+@media (max-width:575px) {
+  .ProductsHero {
+    height: 300px;
+  }
 }

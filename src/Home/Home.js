@@ -30,7 +30,7 @@ function HomeContent() {
 
         <div className="links-container row auto-margin">
 
-          <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12 center">
             <h3 className="link-heading">Products</h3>
             <Link to="/products" className="product-link">
               <img src="https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Sword-icon.svg" className="link-icon" alt="" />

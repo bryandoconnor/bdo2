@@ -52,7 +52,14 @@
 
 .gallery-text {
   color: #78c6db;
+  font-size: 40px;
   text-shadow: 2px 2px 10px #000;
+}
+
+@media (max-width:767px) {
+  .gallery-text {
+    font-size: 25px;
+  }
 }
 
 .gallery-text-box {

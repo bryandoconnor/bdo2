@@ -14,7 +14,7 @@ function Cart(props) {
 
         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 center">
           <div>
-            <h3 className="lg-margin lg-padding">{props.name}</h3>
+            <h3 className="lg-margin cart-title">{props.name}</h3>
             <div className="lg-paragraph">
               <div>{props.description}</div>
               <div>{props.check1}</div>

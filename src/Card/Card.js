@@ -7,7 +7,7 @@ function Cards(props) {
   return (
     <div className="row">
       <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-        <Link to="/Cart" className="card-link center">
+        <Link to="/cart" className="card-link center">
           <div className="card">
             <div className="card-top" style={{
               backgroundColor: '#e12345',
@@ -36,7 +36,7 @@ function Cards(props) {
       </div>
 
       <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-        <Link to="/Cart" className="card-link center">
+        <Link to="/cart" className="card-link center">
           <div className="card">
             <div className="card-top" style={{
               backgroundColor: '#ae3ae3',
@@ -65,7 +65,7 @@ function Cards(props) {
       </div>
 
       <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-        <Link to="/Cart" className="card-link center">
+        <Link to="/cart" className="card-link center">
           <div className="card">
             <div className="card-top" style={{
               backgroundColor: '#d45622',
