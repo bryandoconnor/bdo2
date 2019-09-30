@@ -31,6 +31,7 @@
   background-size: 100%;
   background-position: top center;
   background-repeat: no-repeat;
+  height: 600px;
 }
 
 @media (max-width:1199px) {
