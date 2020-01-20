@@ -8,7 +8,7 @@ function Footer() {
     <div className="row full-row">
       <div className="col-12">
         <p className="footer">
-          <Link to ="/" className="footLink">bryandoconnor.com | © 2019</Link>
+          <Link to ="/" className="footLink">bryandoconnor.com | © 2020</Link>
         </p>
       </div>
     </div>
