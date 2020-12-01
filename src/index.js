@@ -10,7 +10,6 @@ import About from './About/About';
 import Cart from './Cart/Cart';
 import ScrollToTop from './Extras/ScrollToTop';
 import * as serviceWorker from './serviceWorker';
-import products_and_services from './Products/Products_and_Services';
 
 function MyRouter() {
   const chooseClick = (e) => {
@@ -118,9 +117,6 @@ function MyRouter() {
         <Products {...carts}
         onClickEvent={chooseClick}
         onClick1={emptyCart}
-        onClick2={marketingCart}
-        onClick3={logoCart}
-        onClick4={businesscardCart}
          />} />
 
       <Route exact path="/gallery" component={Gallery} />
@@ -130,9 +126,6 @@ function MyRouter() {
         <Cart {...carts}
         onClickEvent={chooseClick}
         onClick1={emptyCart}
-        onClick2={marketingCart}
-        onClick3={logoCart}
-        onClick4={businesscardCart}
          />} />
 
       <Route exact path='/facebook' component={() => {

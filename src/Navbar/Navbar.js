@@ -6,7 +6,7 @@ import '../index.css';
 
 function Navbar(props) {
   const [menuDisplay, setMenuDisplay] = useState(
-    {display: "flex"}
+    {display: "block"}
   );
 
   const [closeDisplay, setCloseDisplay] = useState(
@@ -30,6 +30,7 @@ function Navbar(props) {
   }
 
   const clickMenu = () => {
+    console.log("Opened");
     setMenuDisplay(
       {
         display: "none"
@@ -48,6 +49,7 @@ function Navbar(props) {
   };
 
   const clickClose = () => {
+    console.log("Closed");
     setMenuDisplay(
       {
         display: "block"
@@ -104,7 +106,7 @@ function Navbar(props) {
             <div className="navHamburger" onClick={clickClose}>X</div>
           </div>
 
-          <div className="d-flex nav-mobile w-100" style={navStyle.displays.navDisplay}>
+          <div className="nav-mobile w-100" style={navStyle.displays.navDisplay}>
             <Link to ="/" className="navLink">HOME</Link>
             <Link to ="/products" className="navLink">PRODUCTS</Link>
             <Link to ="/gallery" className="navLink">GALLERY</Link>
