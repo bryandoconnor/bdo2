@@ -9,8 +9,8 @@ function ProductsHeading() {
   return (
     <div>
       <div className="ProductsHero"></div>
-      <div className="row center">
-        <div className="col-12 center">
+      <div className="row text-center">
+        <div className="col-12 p-0 text-center">
           <h1 className="main-heading">Products</h1>
         </div>
       </div>
@@ -20,7 +20,7 @@ function ProductsHeading() {
 
 function Products(props) {
   return (
-    <div className="container-fluid no-padding">
+    <div className="container-fluid p-0">
       <ProductsHeading />
       <Cards {...props} />
       <ProductsRows {...props} />

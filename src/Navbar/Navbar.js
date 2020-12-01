@@ -67,7 +67,7 @@ function Navbar(props) {
 
   return(
     <div id="navbar" className="row">
-      <div className="col-12">
+      <div className="col-12 p-0">
 
         <div className="navBar">
 
@@ -104,7 +104,7 @@ function Navbar(props) {
             <div className="navHamburger" onClick={clickClose}>X</div>
           </div>
 
-          <div className="nav-mobile" style={navStyle.displays.navDisplay}>
+          <div className="d-flex nav-mobile w-100" style={navStyle.displays.navDisplay}>
             <Link to ="/" className="navLink">HOME</Link>
             <Link to ="/products" className="navLink">PRODUCTS</Link>
             <Link to ="/gallery" className="navLink">GALLERY</Link>

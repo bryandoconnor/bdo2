@@ -10,21 +10,30 @@ import About from './About/About';
 import Cart from './Cart/Cart';
 import ScrollToTop from './Extras/ScrollToTop';
 import * as serviceWorker from './serviceWorker';
+import products_and_services from './Products/Products_and_Services';
 
 function MyRouter() {
+  const chooseClick = (e) => {
+    if(e.currentTarget.id === "Marketing Package") {
+      marketingCart();
+    } else if(e.currentTarget.id === "Logo Design") {
+      logoCart();
+    } else if (e.currentTarget.id === "Business Card Design") {
+      businesscardCart();
+    }
+  }
+
   const [carts, setCarts] = useState(
     {
-      name: "Nothing in Cart",
+      productName: "Nothing in Cart",
       shortname: "No Item",
       quantity: 0,
-      price: 0,
-      tax: 0,
-      total: 0,
+      productPrice: 0.00,
       description: "",
-      check1: "",
-      check2: "",
-      check3: "",
-      imageUrl: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/NoItem-icon.svg",
+      productIncludes1: "",
+      productIncludes2: "",
+      productIncludes3: "",
+      productLogo: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/NoItem-icon.svg",
       linkUrl: "/cart"
     }
   );
@@ -32,17 +41,15 @@ function MyRouter() {
   const emptyCart = () => {
     setCarts(
       {
-        name: "Nothing in Cart",
+        productName: "Nothing in Cart",
         shortname: "No Item",
         quantity: 0,
-        price: 0,
-        tax: 0,
-        total: 0,
+        productPrice: 0.00,
         description: "",
-        check1: "",
-        check2: "",
-        check3: "",
-        imageUrl: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/NoItem-icon.svg",
+        productIncludes1: "",
+        productIncludes2: "",
+        productIncludes3: "",
+        productLogo: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/NoItem-icon.svg",
         linkUrl: "/cart"
       }
     );
@@ -51,17 +58,15 @@ function MyRouter() {
   const marketingCart = () => {
     setCarts(
       {
-        name: "Marketing Package",
+        productName: "Marketing Package",
         shortname: "Marketing",
         quantity: 1,
-        price: 1424.99,
-        tax: 97.61,
-        total: "1522.60",
+        productPrice: 14999.99,
         description: "My standard branding package includes logo design, business card design, envelope layout, letterhead design, stock photos & a 10 page style guide!",
-        check1: "✓ Logo Design",
-        check2: "✓ Business Card Design",
-        check3: "✓ Style Guide",
-        imageUrl: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Branding-icon.svg",
+        productIncludes1: "✓ Logo Design",
+        productIncludes2: "✓ Business Card Design",
+        productIncludes3: "✓ Style Guide",
+        productLogo: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Branding-icon.svg",
         linkUrl: "/marketing-pp"
       }
     );
@@ -70,17 +75,15 @@ function MyRouter() {
   const logoCart = () => {
     setCarts(
       {
-        name: "Logo Design",
+        productName: "Logo Design",
         shortname: "Logo",
         quantity: 1,
-        price: 274.99,
-        tax: 18.84,
-        total: 293.83,
+        productPrice: 9999.99,
         description: "A professional logo design includes 2 stacked and 2 horizontal versions of your logo (normal & reversed). With this product you receive 10 thumbnails, 2 revisions, 3 roughs, and 1 final world-class logo!",
-        check1: "✓ Vector File Formats",
-        check2: "✓ Quality Fonts",
-        check3: "✓ Traditional or Modern style",
-        imageUrl: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Logos-icon.svg",
+        productIncludes1: "✓ Vector File Formats",
+        productIncludes2: "✓ Quality Fonts",
+        productIncludes3: "✓ Traditional or Modern style",
+        productLogo: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Logos-icon.svg",
         linkUrl: "/logo-pp"
       }
     );
@@ -89,17 +92,15 @@ function MyRouter() {
   const businesscardCart = () => {
     setCarts(
       {
-        name: "Business Card Design",
+        productName: "Business Card Design",
         shortname: "Business Card",
         quantity: 1,
-        price: 189.99,
-        tax: 13.02,
-        total: "203.00",
+        productPrice: 499.99,
         description: "Your business card design includes 3 layout roughs, one final layout and file formats for future use (print and vector).",
-        check1: "✓ Industry best practices",
-        check2: "✓ Company templates",
-        check3: "✓ Quick turnaround time",
-        imageUrl: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/BusinessCards-icon.svg",
+        productIncludes1: "✓ Industry best practices",
+        productIncludes2: "✓ Company templates",
+        productIncludes3: "✓ Quick turnaround time",
+        productLogo: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/BusinessCards-icon.svg",
         linkUrl: "/businesscard-pp"
       }
     );
@@ -115,6 +116,7 @@ function MyRouter() {
 
       <Route exact path="/products" render={(props) =>
         <Products {...carts}
+        onClickEvent={chooseClick}
         onClick1={emptyCart}
         onClick2={marketingCart}
         onClick3={logoCart}
@@ -126,6 +128,7 @@ function MyRouter() {
 
       <Route exact path="/cart" render={(props) =>
         <Cart {...carts}
+        onClickEvent={chooseClick}
         onClick1={emptyCart}
         onClick2={marketingCart}
         onClick3={logoCart}

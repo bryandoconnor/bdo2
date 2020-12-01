@@ -6,9 +6,9 @@ import '../bootstrap.min.css';
 function Footer() {
 
   return(
-    <div className="row full-row">
-      <div className="col-12">
-        <p className="footer">
+    <div className="row m-0 text-center">
+      <div className="col-12 p-0">
+        <p className="footer m-0">
           <Link to ="/" className="footLink">bryandoconnor.com | © <span>{(new Date().getFullYear())}</span></Link>
         </p>
       </div>
