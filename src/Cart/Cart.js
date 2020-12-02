@@ -19,7 +19,7 @@ function Cart(props) {
           <div>
             <h3 className="lg-margin cart-title">{props.productName}</h3>
             <div className="lg-paragraph">
-              <div>{props.description}</div>
+              <div>{props.productRowHeader}</div>
               <div>{props.productIncludes1}</div>
               <div>{props.productIncludes2}</div>
               <div>{props.productIncludes3}</div>
@@ -30,13 +30,13 @@ function Cart(props) {
 
         <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
           <div>
-            <h5 className="padding-20 cart-item-heading">{props.shortname}</h5>
-            <div className="lg-paragraph sm-margin sm-padding">Qty: {props.quantity}</div>
+            <h5 className="padding-20 cart-item-heading">{props.productShortname}</h5>
+            <div className="lg-paragraph sm-margin sm-padding">Qty: {props.productQuantity}</div>
             <div className="lg-paragraph sm-margin sm-padding">Price: ${props.productPrice.toFixed(2)}</div>
             <div className="lg-paragraph sm-margin sm-padding">Tax: ${taxCalc}</div>
             <hr className="hr mx-auto my-0"></hr>
             <div className="lg-paragraph sm-margin sm-padding">Total: ${totalCalc}</div>
-            <Link to={props.linkUrl} target="_blank">
+            <Link to={props.productLinkURL} target="_blank">
               <button className="btn success-btn orange-button md-button">Proceed to Checkout</button>
             </Link>
           </div>

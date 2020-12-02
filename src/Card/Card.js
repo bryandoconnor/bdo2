@@ -20,7 +20,7 @@ function Cards(props) {
                 <h5>{res.productName}</h5>
               </div>
               <div className="card-text text-left">
-                <p className="card-padding mx-auto my-0 text-center">Professional Brand & Marketing Solutions!</p>
+                <p className="card-padding mx-auto my-0 text-center">{res.productCardHeader}</p>
                 <ul>
                   <div>{res.productIncludes1}</div>
                   <div>{res.productIncludes2}</div>

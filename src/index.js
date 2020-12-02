@@ -19,21 +19,27 @@ function MyRouter() {
       logoCart();
     } else if (e.currentTarget.id === "Business Card Design") {
       businesscardCart();
+    } else if (e.currentTarget.id === "Custom Illustrations") {
+      illustrationCart();
+    } else if (e.currentTarget.id === "Wedding Invite Design") {
+      inviteCart();
+    } else if (e.currentTarget.id === "Website Design") {
+      websiteCart();
     }
   }
 
   const [carts, setCarts] = useState(
     {
       productName: "Nothing in Cart",
-      shortname: "No Item",
-      quantity: 0,
+      productShortname: "No Item",
+      productQuantity: 0,
       productPrice: 0.00,
-      description: "",
+      productRowHeader: "",
       productIncludes1: "",
       productIncludes2: "",
       productIncludes3: "",
       productLogo: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/NoItem-icon.svg",
-      linkUrl: "/cart"
+      productLinkURL: "/cart"
     }
   );
 
@@ -41,15 +47,15 @@ function MyRouter() {
     setCarts(
       {
         productName: "Nothing in Cart",
-        shortname: "No Item",
-        quantity: 0,
+        productShortname: "No Item",
+        productQuantity: 0,
         productPrice: 0.00,
-        description: "",
+        productRowHeader: "",
         productIncludes1: "",
         productIncludes2: "",
         productIncludes3: "",
         productLogo: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/NoItem-icon.svg",
-        linkUrl: "/cart"
+        productLinkURL: "/cart"
       }
     );
   };
@@ -58,15 +64,15 @@ function MyRouter() {
     setCarts(
       {
         productName: "Marketing Package",
-        shortname: "Marketing",
-        quantity: 1,
+        productShortname: "Marketing",
+        productQuantity: 1,
         productPrice: 14999.99,
-        description: "My standard branding package includes logo design, business card design, envelope layout, letterhead design, stock photos & a 10 page style guide!",
+        productRowHeader: "This package includes logo, business card, envelope & letterhead designs as well as a style guide!",
         productIncludes1: "✓ Logo Design",
         productIncludes2: "✓ Business Card Design",
         productIncludes3: "✓ Style Guide",
         productLogo: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Branding-icon.svg",
-        linkUrl: "/marketing-pp"
+        productLinkURL: "/marketing-pp"
       }
     );
   };
@@ -75,15 +81,15 @@ function MyRouter() {
     setCarts(
       {
         productName: "Logo Design",
-        shortname: "Logo",
-        quantity: 1,
+        productShortname: "Logo",
+        productQuantity: 1,
         productPrice: 9999.99,
-        description: "A professional logo design includes 2 stacked and 2 horizontal versions of your logo (normal & reversed). With this product you receive 10 thumbnails, 2 revisions, 3 roughs, and 1 final world-class logo!",
-        productIncludes1: "✓ Vector File Formats",
-        productIncludes2: "✓ Quality Fonts",
-        productIncludes3: "✓ Traditional or Modern style",
+        productRowHeader: "Logo design includes 4 logo versions. 10 thumbnails, 2 revisions, 3 roughs, and 1 final world-class logo!",
+        productIncludes1: "✓ Refresh or Recreate a Logo",
+        productIncludes2: "✓ Professional Look",
+        productIncludes3: "✓ Vector Files",
         productLogo: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Logos-icon.svg",
-        linkUrl: "/logo-pp"
+        productLinkURL: "/logo-pp"
       }
     );
   };
@@ -92,15 +98,66 @@ function MyRouter() {
     setCarts(
       {
         productName: "Business Card Design",
-        shortname: "Business Card",
-        quantity: 1,
+        productShortname: "Business Card",
+        productQuantity: 1,
         productPrice: 499.99,
-        description: "Your business card design includes 3 layout roughs, one final layout and file formats for future use (print and vector).",
-        productIncludes1: "✓ Industry best practices",
-        productIncludes2: "✓ Company templates",
-        productIncludes3: "✓ Quick turnaround time",
+        productRowHeader: "Your business card design includes 3 layout roughs, one final layout and file formats for future use (print and vector)!",
+        productIncludes1: "✓ Beautiful Custom Designs",
+        productIncludes2: "✓ Professional Templates",
+        productIncludes3: "✓ Print-ready Files",
         productLogo: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/BusinessCards-icon.svg",
-        linkUrl: "/businesscard-pp"
+        productLinkURL: "/businesscard-pp"
+      }
+    );
+  };
+
+  const illustrationCart = () => {
+    setCarts(
+      {
+        productName: "Custom Illustrations",
+        productShortname: "Illustrations",
+        productQuantity: 1,
+        productPrice: 8999.99,
+        productRowHeader: "Your custom illustration includes 3 layout roughs, one final layout and file formats for future use (print only)!",
+        productIncludes1: "✓ Professional Illustration",
+        productIncludes2: "✓ Choose Style and Color Options",
+        productIncludes3: "✓ Print-ready Files",
+        productLogo: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Illustrations-icon.svg",
+        productLinkURL: "/illustration-pp"
+      }
+    );
+  };
+
+  const inviteCart = () => {
+    setCarts(
+      {
+        productName: "Wedding Invite Design",
+        productShortname: "Wedding Invite",
+        productQuantity: 1,
+        productPrice: 399.99,
+        productRowHeader: "Custom wedding invite design includes 3 layout roughs, one final layout and file formats that last a lifetime!",
+        productIncludes1: "✓ Create Your Dream Invite",
+        productIncludes2: "✓ Professional Template",
+        productIncludes3: "✓ Print-ready Files",
+        productLogo: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Invites-icon.svg",
+        productLinkURL: "/invite-pp"
+      }
+    );
+  };
+
+  const websiteCart = () => {
+    setCarts(
+      {
+        productName: "Website Design",
+        productShortname: "Website",
+        productQuantity: 1,
+        productPrice: 19999.99,
+        productRowHeader: "Your professional website design includes a SPA with 5 pages, 10 hand-picked images, and modern iconography!",
+        productIncludes1: "✓ Fully Functioning Code",
+        productIncludes2: "✓ Professional UX/UI",
+        productIncludes3: "✓ Amazing Images and Icons",
+        productLogo: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Web-icon.svg",
+        productLinkURL: "/website-pp"
       }
     );
   };
@@ -108,7 +165,7 @@ function MyRouter() {
   return (
     <BrowserRouter onUpdate={() => window.scrollTo(0, 0)} >
 
-      <Navbar qty={carts.quantity} />
+      <Navbar qty={carts.productQuantity} />
       <ScrollToTop>
 
       <Route exact path="/" component={Home} />
@@ -155,6 +212,21 @@ function MyRouter() {
 
       <Route exact path='/businesscard-pp' component={() => {
         window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XHB43GC3Z8UKA';
+        return null;
+      }} />
+
+      <Route exact path='/illustration-pp' component={() => {
+        window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KECFQC6L3UBQU';
+        return null;
+      }} />
+
+      <Route exact path='/invite-pp' component={() => {
+        window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BJ49P6J8N5MQL';
+        return null;
+      }} />
+
+      <Route exact path='/website-pp' component={() => {
+        window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PTGDMFBKX9P6Q';
         return null;
       }} />
 
