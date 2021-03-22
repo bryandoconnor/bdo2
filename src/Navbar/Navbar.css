@@ -3,34 +3,16 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0px 20px;
+  margin: 0 20px;
   padding: 2px 4px;
   position: relative;
-}
-
-@media (max-width:575px) {
-  .navBar {
-    display: none;
-  }
 }
 
 .navBar-mobile {
   display: none;
 }
 
-@media (max-width:575px) {
-  .navBar-mobile {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0px 20px;
-    padding: 2px 4px;
-    position: relative;
-  }
-}
-
-.navBrand img{
+.navBrand img {
   height: 70px;
 }
 
@@ -40,7 +22,7 @@
   border-radius: 7px;
   color: #000;
   font-family: 'Permanent Marker', cursive;
-  margin: 0px 20px;
+  margin: 0 20px;
   padding: 5px 10px;
 }
 
@@ -61,8 +43,8 @@
   display: block;
   font-size: 14px;
   font-family: 'Permanent Marker', cursive;
-  padding:10px 25px;
-  text-shadow: 0 2px 0 rgba(255,255,255,.5);
+  padding: 10px 1.5rem;
+  text-shadow: 0 2px 0 rgba(255, 255, 255, .5);
 }
 
 .navLink:hover {
@@ -71,9 +53,18 @@
   transition-duration: .8s;
 }
 
+.nav-mobile {
+  flex-direction: column;
+}
+
 @media (max-width:991px) {
   .navBrand img {
     height: 60px;
+  }
+
+  .navLink {
+    font-size: 12px;
+    padding: 10px 20px;
   }
 }
 
@@ -81,56 +72,30 @@
   .navBrand img {
     height: 50px;
   }
-}
 
-.nav-mobile {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-
-@media (max-width:991px) {
-  .navLink {
-    font-size: 12px;
-    padding:10px 20px;
-  }
-}
-
-@media (max-width:767px) {
   .navLink {
     font-size: 11px;
-    padding: 10px 10px;
+    padding: 10px;
   }
 }
 
 @media (max-width:575px) {
+  .navBar {
+    display: none;
+  }
+
+  .navBar-mobile {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    padding: 2px 4px;
+    position: relative;
+  }
+
   .navLink {
     font-size: 14px;
-    padding: 10px 25px;
+    padding: 10px 1.5rem;
   }
 }
-
-/* @media (max-width:1199px) {
-  .some-class {
-    width: 70%
-  }
-} */
-
-/* @media (max-width:991px) {
-  .some-class {
-    margin:15px auto;
-  }
-} */
-
-/* @media (max-width:767px) {
-  .some-class {
-    width: 50%;
-  }
-} */
-
-/* @media (max-width:575px) {
-  .some-class {
-    font-size: 10px;
-  }
-} */

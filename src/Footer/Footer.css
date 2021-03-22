@@ -1,11 +1,10 @@
 .footer {
   background-color: #000;
-  padding: 10px;
+  padding: .625rem;
 }
 
 p.footer {
-  margin: 0px;
-  padding: 10px;
+  padding: .625rem;
 }
 
 .footLink {

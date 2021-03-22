@@ -2,96 +2,44 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Card.css';
 import '../bootstrap.min.css';
+import products_and_services from '../Products/Products_and_Services';
 
 function Cards(props) {
+  const productCards = products_and_services.map((res) =>
+    <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12" key={res.productId}>
+      <Link to="/cart" className="card-link d-block text-center" id={res.productName} onClick={props.onClickEvent}>
+        <div className="card">
+          <div className="card-top d-inline-block m-0 w-100" style={{
+            backgroundColor: res.productColor,
+            backgroundImage: `url(` + res.productLogo + `)`,
+            backgroundPosition: 'center center',
+            backgroundRepeat: 'no-repeat'
+          }}></div>
+          <div className="card-body d-inline-block w-100">
+              <div className="card-title m-0">
+                <h5>{res.productName}</h5>
+              </div>
+              <div className="card-text text-left">
+                <p className="card-padding mx-auto my-0 text-center">{res.productCardHeader}</p>
+                <ul>
+                  <div>{res.productIncludes1}</div>
+                  <div>{res.productIncludes2}</div>
+                  <div>{res.productIncludes3}</div>
+                </ul>
+                <div className="text-center">
+                  <button className="btn btn-success orange-button card-button mx-auto my-0">
+                    {res.productButtonText1} | {res.productPrice}
+                  </button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </Link>
+    </div>
+  );
   return (
     <div className="row">
-      <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-        <Link to="/cart" className="card-link center">
-          <div className="card">
-            <div className="card-top" style={{
-              backgroundColor: '#e12345',
-              backgroundImage: `url(https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Branding-icon.svg)`,
-              backgroundPosition: 'center center',
-              backgroundRepeat: 'no-repeat'
-            }}></div>
-            <div className="card-body">
-                <div className="card-title no-margin">
-                  <h5>Marketing Package</h5>
-                </div>
-                <div className="card-text">
-                  <p className="auto-margin card-padding center">Professional Brand & Marketing Solutions!</p>
-                  <ul>
-                    <li>Logo Design</li>
-                    <li>Business Card Design</li>
-                    <li>Style Guide</li>
-                  </ul>
-                  <div className="center">
-                    <button className="btn btn-success orange-button card-button" onClick={props.onClick2}>Fast Checkout</button>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </Link>
-      </div>
-
-      <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-        <Link to="/cart" className="card-link center">
-          <div className="card">
-            <div className="card-top" style={{
-              backgroundColor: '#ae3ae3',
-              backgroundImage: `url(https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Logos-icon.svg)`,
-              backgroundPosition: 'center center',
-              backgroundRepeat: 'no-repeat'
-            }}></div>
-            <div className="card-body">
-                <div className="card-title no-margin">
-                  <h5>Logo Design</h5>
-                </div>
-                <div className="card-text">
-                  <p className="auto-margin card-padding center">Outstanding Logo Creation and Design!</p>
-                  <ul>
-                    <li>Vector files</li>
-                    <li>Professional look</li>
-                    <li>Refresh or recreate a logo</li>
-                  </ul>
-                  <div className="center">
-                    <button className="btn btn-success orange-button card-button" onClick={props.onClick3} >Fast Checkout</button>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </Link>
-      </div>
-
-      <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-        <Link to="/cart" className="card-link center">
-          <div className="card">
-            <div className="card-top" style={{
-              backgroundColor: '#d45622',
-              backgroundImage: `url(https://bryandoconnor.s3-us-west-2.amazonaws.com/images/BusinessCards-icon.svg)`,
-              backgroundPosition: 'center center',
-              backgroundRepeat: 'no-repeat'
-            }}></div>
-            <div className="card-body">
-                <div className="card-title no-margin">
-                  <h5>Business Card Design</h5>
-                </div>
-                <div className="card-text">
-                  <p className="auto-margin card-padding center">Expert Business Card Layout & Design!</p>
-                  <ul>
-                    <li>Print-ready files</li>
-                    <li>Professional templates</li>
-                    <li>Fast service</li>
-                  </ul>
-                  <div className="center">
-                    <button className="btn btn-success orange-button card-button" onClick={props.onClick4}>Fast Checkout</button>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </Link>
-      </div>
+      {productCards}
     </div>
   );
 }
