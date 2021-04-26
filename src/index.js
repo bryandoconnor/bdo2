@@ -7,6 +7,7 @@ import Home from './Home/Home';
 import Products from './Products/Products';
 import Gallery from './Gallery/Gallery';
 import About from './About/About';
+import Shirts from './Shirts/Shirts';
 import Cart from './Cart/Cart';
 import ScrollToTop from './Extras/ScrollToTop';
 import * as serviceWorker from './serviceWorker';
@@ -178,6 +179,7 @@ function MyRouter() {
 
       <Route exact path="/gallery" component={Gallery} />
       <Route exact path="/about" component={About} />
+      <Route exact path="/shirts" component={Shirts} />
 
       <Route exact path="/cart" render={(props) =>
         <Cart {...carts}
@@ -227,6 +229,11 @@ function MyRouter() {
 
       <Route exact path='/website-pp' component={() => {
         window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PTGDMFBKX9P6Q';
+        return null;
+      }} />
+
+      <Route exact path='/shirts-pp' component={() => {
+        window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6EMCE8S9NLNQ8';
         return null;
       }} />
 

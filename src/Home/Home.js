@@ -8,7 +8,7 @@ function HomeHeading() {
   return (
     <div>
       <div className="IndexHero"></div>
-      <div className="row text-center">
+      <div className="d-block row text-center">
         <h1 className="main-heading">Stand Out with Outstanding Design!</h1>
         <p className="xlg-paragraph lg-margin lg-padding">This website is dedicated to my art. I've been drawing and designing for as long as I can remember! I've seen art change people and help them to reach their goals and achieve their dreams.</p>
         <p className="xlg-paragraph lg-margin lg-padding">Art transcends the barriers of the human race in a unique way. Language, culture, race, sex, religion, and other things that separate us are lost. Art is a connection. A reference point where we can be united. It is a light in the darkness.</p>
