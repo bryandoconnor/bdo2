@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Extras/Heroes.css';
-import '../bootstrap.min.css';
-import '../index.css';
+import '../../bootstrap.min.css';
+import '../../index.css';
 
 function HomeHeading() {
   return (

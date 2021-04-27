@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Extras/Heroes.css';
-import '../index.css';
+import '../../index.css';
 
 function AboutHeading() {
   return (

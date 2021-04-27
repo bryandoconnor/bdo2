@@ -1,15 +1,16 @@
 import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route } from 'react-router-dom';
-import Navbar from './Navbar/Navbar';
-import Footer from './Footer/Footer';
-import Home from './Home/Home';
-import Products from './Products/Products';
-import Gallery from './Gallery/Gallery';
-import About from './About/About';
-import Shirts from './Shirts/Shirts';
-import Cart from './Cart/Cart';
-import ScrollToTop from './Extras/ScrollToTop';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Auth from "./auth/Auth";
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+import Home from './components/Home/Home';
+import Products from './components/Products/Products';
+import Gallery from './components/Gallery/Gallery';
+import About from './components/About/About';
+import Shirts from './components/Shirts/Shirts';
+import Cart from './components/Cart/Cart';
+import ScrollToTop from './components/Extras/ScrollToTop';
 import * as serviceWorker from './serviceWorker';
 
 function MyRouter() {
@@ -164,83 +165,83 @@ function MyRouter() {
   };
 
   return (
-    <BrowserRouter onUpdate={() => window.scrollTo(0, 0)} >
+    <Router onUpdate={() => window.scrollTo(0, 0)} >
+      <Auth>
+        <Navbar qty={carts.productQuantity} />
+        <ScrollToTop>
 
-      <Navbar qty={carts.productQuantity} />
-      <ScrollToTop>
+        <Route exact path="/" component={Home} />
 
-      <Route exact path="/" component={Home} />
+        <Route exact path="/products" render={(props) =>
+          <Products {...carts}
+          onClickEvent={chooseClick}
+          onClick1={emptyCart}
+           />} />
 
-      <Route exact path="/products" render={(props) =>
-        <Products {...carts}
-        onClickEvent={chooseClick}
-        onClick1={emptyCart}
-         />} />
+        <Route exact path="/gallery" component={Gallery} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/shirts" component={Shirts} />
 
-      <Route exact path="/gallery" component={Gallery} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/shirts" component={Shirts} />
+        <Route exact path="/cart" render={(props) =>
+          <Cart {...carts}
+          onClickEvent={chooseClick}
+          onClick1={emptyCart}
+           />} />
 
-      <Route exact path="/cart" render={(props) =>
-        <Cart {...carts}
-        onClickEvent={chooseClick}
-        onClick1={emptyCart}
-         />} />
+        <Route exact path='/facebook' component={() => {
+          window.location.href = 'https://www.facebook.com/myamazingart/';
+          return null;
+        }} />
 
-      <Route exact path='/facebook' component={() => {
-        window.location.href = 'https://www.facebook.com/myamazingart/';
-        return null;
-      }} />
+        <Route exact path='/twitter' component={() => {
+          window.location.href = 'https://twitter.com/MyAmazingArt';
+          return null;
+        }} />
 
-      <Route exact path='/twitter' component={() => {
-        window.location.href = 'https://twitter.com/MyAmazingArt';
-        return null;
-      }} />
+        <Route exact path='/youtube' component={() => {
+          window.location.href = 'https://www.youtube.com/channel/UCJDaTHvz6hPazDF37DMadWw?';
+          return null;
+        }} />
 
-      <Route exact path='/youtube' component={() => {
-        window.location.href = 'https://www.youtube.com/channel/UCJDaTHvz6hPazDF37DMadWw?';
-        return null;
-      }} />
+        <Route exact path='/marketing-pp' component={() => {
+          window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6JTXU56HHYALG';
+          return null;
+        }} />
 
-      <Route exact path='/marketing-pp' component={() => {
-        window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6JTXU56HHYALG';
-        return null;
-      }} />
+        <Route exact path='/logo-pp' component={() => {
+          window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B826XEELJR6Y2';
+          return null;
+        }} />
 
-      <Route exact path='/logo-pp' component={() => {
-        window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B826XEELJR6Y2';
-        return null;
-      }} />
+        <Route exact path='/businesscard-pp' component={() => {
+          window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XHB43GC3Z8UKA';
+          return null;
+        }} />
 
-      <Route exact path='/businesscard-pp' component={() => {
-        window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XHB43GC3Z8UKA';
-        return null;
-      }} />
+        <Route exact path='/illustration-pp' component={() => {
+          window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KECFQC6L3UBQU';
+          return null;
+        }} />
 
-      <Route exact path='/illustration-pp' component={() => {
-        window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KECFQC6L3UBQU';
-        return null;
-      }} />
+        <Route exact path='/invite-pp' component={() => {
+          window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BJ49P6J8N5MQL';
+          return null;
+        }} />
 
-      <Route exact path='/invite-pp' component={() => {
-        window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BJ49P6J8N5MQL';
-        return null;
-      }} />
+        <Route exact path='/website-pp' component={() => {
+          window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PTGDMFBKX9P6Q';
+          return null;
+        }} />
 
-      <Route exact path='/website-pp' component={() => {
-        window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PTGDMFBKX9P6Q';
-        return null;
-      }} />
+        <Route exact path='/shirts-pp' component={() => {
+          window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6EMCE8S9NLNQ8';
+          return null;
+        }} />
 
-      <Route exact path='/shirts-pp' component={() => {
-        window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6EMCE8S9NLNQ8';
-        return null;
-      }} />
-
-      </ScrollToTop>
-      <Footer />
-
-    </BrowserRouter>
+        </ScrollToTop>
+        <Footer />
+      </Auth>
+    </Router>
   );
 }
 

@@ -3,7 +3,7 @@ import ProductsRows from './ProductsRows';
 import Cards from '../Card/Card';
 import '../Card/Card.css';
 import '../Extras/Heroes.css';
-import '../bootstrap.min.css';
+import '../../bootstrap.min.css';
 
 function ProductsHeading() {
   return (

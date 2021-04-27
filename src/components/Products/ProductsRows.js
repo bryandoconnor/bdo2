@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './ProductsRows.css';
-import '../bootstrap.min.css';
-import '../index.css';
+import '../../bootstrap.min.css';
+import '../../index.css';
 import products_and_services from './Products_and_Services';
 
 function ProductsRows(props) {

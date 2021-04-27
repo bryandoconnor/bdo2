@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
-import '../bootstrap.min.css';
+import '../../bootstrap.min.css';
 
 function Footer() {
 

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import '../bootstrap.min.css';
-import '../index.css';
+import AuthNav from '../../auth/AuthNav';
+import '../../bootstrap.min.css';
+import '../../index.css';
 
 function Navbar(props) {
   const [menuDisplay, setMenuDisplay] = useState(
@@ -30,7 +31,7 @@ function Navbar(props) {
   }
 
   const clickMenu = () => {
-    console.log("Opened");
+    // Mobile nav open
     setMenuDisplay(
       {
         display: "none"
@@ -49,7 +50,7 @@ function Navbar(props) {
   };
 
   const clickClose = () => {
-    console.log("Closed");
+    // Mobile nav close
     setMenuDisplay(
       {
         display: "block"
@@ -75,7 +76,7 @@ function Navbar(props) {
 
           <div className="navBrand">
             <Link to ="/">
-              <img src="https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Brand.png" alt="Brand logo" />
+              <img src="https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Brand.svg" alt="Brand logo" />
             </Link>
           </div>
 
@@ -86,6 +87,7 @@ function Navbar(props) {
               <Link to ="/gallery" className="navLink">GALLERY</Link>
               <Link to ="/about" className="navLink">ABOUT</Link>
               <Link to ="/cart" className="navLink"><i className="fas fa-shopping-cart"></i><span className="count-cart">{props.qty}</span></Link>
+              <div className="navLink p-0"><AuthNav /></div>
             </div>
           </div>
 
@@ -95,7 +97,7 @@ function Navbar(props) {
 
           <div className="navBrand">
             <Link to ="/">
-              <img src="https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Brand.png" alt="Brand logo" />
+              <img src="https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Brand.svg" alt="Brand logo" />
             </Link>
           </div>
 
@@ -112,10 +114,10 @@ function Navbar(props) {
             <Link to ="/gallery" className="navLink">GALLERY</Link>
             <Link to ="/about" className="navLink">ABOUT</Link>
             <Link to ="/cart" className="navLink"><i className="fas fa-shopping-cart"></i><span className="count-cart">{props.qty}</span></Link>
+            <div className="navLink"><AuthNav /></div>
           </div>
 
         </div>
-
       </div>
     </div>
   );

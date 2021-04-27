@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import pieces from './Pieces';
 import './Gallery.css';
 import '../Extras/Heroes.css';
-import '../index.css';
+import '../../index.css';
 
 function GalleryHeading() {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Card.css';
-import '../bootstrap.min.css';
+import '../../bootstrap.min.css';
 import products_and_services from '../Products/Products_and_Services';
 
 function Cards(props) {
