@@ -233,8 +233,23 @@ function MyRouter() {
           return null;
         }} />
 
-        <Route exact path='/shirts-pp' component={() => {
-          window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6EMCE8S9NLNQ8';
+        <Route exact path='/mens-shirt-zazzle' component={() => {
+          window.location.href = 'https://www.zazzle.com/z/qfsb6u07';
+          return null;
+        }} />
+
+        <Route exact path='/womens-shirt-zazzle' component={() => {
+          window.location.href = 'https://www.zazzle.com/z/amwuyhwb';
+          return null;
+        }} />
+
+        <Route exact path='/kids-shirt-zazzle' component={() => {
+          window.location.href = 'https://www.zazzle.com/z/a7ws7bed';
+          return null;
+        }} />
+
+        <Route exact path='/aprons-zazzle' component={() => {
+          window.location.href = 'https://www.zazzle.com/z/9uj8zdf0';
           return null;
         }} />
 
