@@ -234,22 +234,22 @@ function MyRouter() {
         }} />
 
         <Route exact path='/mens-shirt-zazzle' component={() => {
-          window.location.href = 'https://www.zazzle.com/z/qfsb6u07';
+          window.location.href = 'https://www.zazzle.com/i_eat_at_ossies_mens_t_shirt-235733169565141432';
           return null;
         }} />
 
         <Route exact path='/womens-shirt-zazzle' component={() => {
-          window.location.href = 'https://www.zazzle.com/z/amwuyhwb';
+          window.location.href = 'https://www.zazzle.com/i_eat_at_ossies_womens_t_shirt-235003222720023867';
           return null;
         }} />
 
         <Route exact path='/kids-shirt-zazzle' component={() => {
-          window.location.href = 'https://www.zazzle.com/z/a7ws7bed';
+          window.location.href = 'https://www.zazzle.com/i_eat_at_ossies_kids_t_shirt-235149394548698012';
           return null;
         }} />
 
         <Route exact path='/aprons-zazzle' component={() => {
-          window.location.href = 'https://www.zazzle.com/z/9uj8zdf0';
+          window.location.href = 'https://www.zazzle.com/i_eat_at_ossies_apron-154873931354488868';
           return null;
         }} />
 
