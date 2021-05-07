@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ProductsRows from './ProductsRows';
 import Cards from '../Card/Card';
 import '../Card/Card.css';
@@ -18,10 +19,25 @@ function ProductsHeading() {
   );
 }
 
+function ProductsBanner() {
+  return (
+    <div>
+      <div className="d-block row text-center bg-primary py-5 text-white mb-3">
+        <h2 className="products-heading">Gear N Stuff</h2>
+        <p>Click the button below to visit my store!</p>
+        <Link to="/shirts">
+          <button className="btn btn-success orange-button">Apparal & Swag</button>
+        </Link>
+      </div>
+    </div>
+  );
+}
+
 function Products(props) {
   return (
     <div className="container-fluid p-0">
       <ProductsHeading />
+      <ProductsBanner />
       <Cards {...props} />
       <ProductsRows {...props} />
     </div>

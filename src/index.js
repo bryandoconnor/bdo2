@@ -233,23 +233,64 @@ function MyRouter() {
           return null;
         }} />
 
-        <Route exact path='/mens-shirt-zazzle' component={() => {
+        <Route exact path='/ossies-mens-shirt-zazzle' component={() => {
           window.location.href = 'https://www.zazzle.com/i_eat_at_ossies_mens_t_shirt-235733169565141432';
           return null;
         }} />
 
-        <Route exact path='/womens-shirt-zazzle' component={() => {
+        <Route exact path='/ossies-womens-shirt-zazzle' component={() => {
           window.location.href = 'https://www.zazzle.com/i_eat_at_ossies_womens_t_shirt-235003222720023867';
           return null;
         }} />
 
-        <Route exact path='/kids-shirt-zazzle' component={() => {
+        <Route exact path='/ossies-kids-shirt-zazzle' component={() => {
           window.location.href = 'https://www.zazzle.com/i_eat_at_ossies_kids_t_shirt-235149394548698012';
           return null;
         }} />
 
-        <Route exact path='/aprons-zazzle' component={() => {
+        <Route exact path='/ossies-aprons-zazzle' component={() => {
           window.location.href = 'https://www.zazzle.com/i_eat_at_ossies_apron-154873931354488868';
+          return null;
+        }} />
+
+        <Route exact path='/lilies-mens-shirt-zazzle' component={() => {
+          window.location.href = 'https://www.zazzle.com/consider_the_lilies_cross_mens_black_t_shirt-235974912798412078';
+          return null;
+        }} />
+
+        <Route exact path='/afraid-mens-shirt-zazzle' component={() => {
+          window.location.href = 'https://www.zazzle.com/be_not_afraid_wings_mens_black_t_shirt-235640684584076550';
+          return null;
+        }} />
+
+        <Route exact path='/lilies-womens-shirt-zazzle' component={() => {
+          window.location.href = 'https://www.zazzle.com/consider_the_lilies_cross_womens_black_t_shirt-235910854397781281';
+          return null;
+        }} />
+
+        <Route exact path='/afraid-womens-shirt-zazzle' component={() => {
+          window.location.href = 'https://www.zazzle.com/be_not_afraid_wings_womens_black_t_shirt-235276667109904535';
+          return null;
+        }} />
+
+
+        <Route exact path='/never-give-up-mug-zazzle' component={() => {
+          window.location.href = 'https://www.zazzle.com/never_give_up_mug-168290438334133454';
+          return null;
+        }} />
+
+        <Route exact path='/done-right-mug-zazzle' component={() => {
+          window.location.href = 'https://www.zazzle.com/a_job_worth_doin_mug-168064899396292397';
+          return null;
+        }} />
+
+        <Route exact path='/dragon-wreath-mug-zazzle' component={() => {
+          window.location.href = 'https://www.zazzle.com/dragon_wreath_mug-168772340050709168';
+          return null;
+        }} />
+
+        <Route exact path='/wizard-books-mug-zazzle' component={() => {
+          window.location.href = 'https://www.zazzle.com/wizard_books_mug-168668872202846389';
           return null;
         }} />
 
