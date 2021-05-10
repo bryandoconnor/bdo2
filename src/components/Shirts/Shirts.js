@@ -9,6 +9,7 @@ function ShirtsHeading() {
           <h1 className="main-heading">T-shirts and Swag</h1>
         </div>
       </div>
+
       <div className="row text-center">
         <div className="col-12 col-lg-3 px-0 py-4 text-center">
           <div class="text-center">
@@ -119,14 +120,76 @@ function ShirtsHeading() {
 
         <div className="col-12 col-lg-3 px-0 py-4 text-center">
           <div class="text-center">
-            <Link to="wizard-books-mug-zazzle" target="_blank">
-              <img src="https://rlv.zcache.com/wizard_books_mug-r5ad7a8e0fdf4407eadc7e931c1ddb1cb_x7jg9_8byvr_1024.jpg?max_dim=325&bg=0xffffff" alt="Wizard Books Mug" />
+            <Link to="grit-mug-zazzle" target="_blank">
+              <img src="https://rlv.zcache.com/grit_mug-r88a5143400674d139b3c05b50b350408_x7jg9_8byvr_1024.jpg?max_dim=325&bg=0xffffff" alt="Grit Mug" />
             </Link>
           </div>
 
-          <p className="xlg-paragraph lg-margin lg-padding">Wizard Books Mug</p>
+          <p className="xlg-paragraph lg-margin lg-padding">GRIT Mug</p>
 
-          <Link to="wizard-books-mug-zazzle" target="_blank">
+          <Link to="grit-mug-zazzle" target="_blank">
+            <button className="btn btn-success orange-button mx-auto my-0">Purchase Now</button>
+          </Link>
+
+        </div>
+      </div>
+
+      <div className="row text-center">
+        <div className="col-12 col-lg-3 px-0 py-4 text-center">
+          <div class="text-center">
+            <Link to="grit-mens-black-shirt-zazzle" target="_blank">
+              <img src="https://rlv.zcache.com/grit_mens_black_t_shirt-r89dc88d3bf55424b9c220550f5a802ae_k2ggc_1024.jpg?max_dim=325&bg=0xffffff" alt="GRIT Men's Black T-Shirt" />
+            </Link>
+          </div>
+
+          <p className="xlg-paragraph lg-margin lg-padding">Men's GRIT Black T</p>
+
+          <Link to="grit-mens-black-shirt-zazzle" target="_blank">
+            <button className="btn btn-success orange-button mx-auto my-0">Purchase Now</button>
+          </Link>
+
+        </div>
+
+        <div className="col-12 col-lg-3 px-0 py-4 text-center">
+          <div class="text-center">
+            <Link to="grit-mens-white-shirt-zazzle" target="_blank">
+              <img src="https://rlv.zcache.com/grit_mens_white_t_shirt-r70dc50578dce480882d707cac5c9ca05_k2g1o_1024.jpg?max_dim=325&bg=0xffffff" alt="GRIT Men's White T-Shirt" />
+            </Link>
+          </div>
+
+          <p className="xlg-paragraph lg-margin lg-padding">Men's GRIT White T</p>
+
+          <Link to="grit-mens-white-shirt-zazzle" target="_blank">
+            <button className="btn btn-success orange-button mx-auto my-0">Purchase Now</button>
+          </Link>
+
+        </div>
+
+        <div className="col-12 col-lg-3 px-0 py-4 text-center">
+          <div class="text-center">
+            <Link to="grit-womens-black-shirt-zazzle" target="_blank">
+              <img src="https://rlv.zcache.com/grit_womens_black_t_shirt-r646efe78db2e449289d2ec543b1e0737_k2gl9_1024.jpg?max_dim=325&bg=0xffffff" alt="GRIT Women's Black T-Shirt" />
+            </Link>
+          </div>
+
+          <p className="xlg-paragraph lg-margin lg-padding">Women's GRIT Black T</p>
+
+          <Link to="grit-womens-black-shirt-zazzle" target="_blank">
+            <button className="btn btn-success orange-button mx-auto my-0">Purchase Now</button>
+          </Link>
+
+        </div>
+
+        <div className="col-12 col-lg-3 px-0 py-4 text-center">
+          <div class="text-center">
+            <Link to="grit-womens-white-shirt-zazzle" target="_blank">
+              <img src="https://rlv.zcache.com/grit_womens_white_t_shirt-rca4d1298a97f4e928945505c6452be35_k2glg_1024.jpg?max_dim=325&bg=0xffffff" alt="GRIT Women's White T-Shirt" />
+            </Link>
+          </div>
+
+          <p className="xlg-paragraph lg-margin lg-padding">Women's GRIT White T</p>
+
+          <Link to="grit-womens-white-shirt-zazzle" target="_blank">
             <button className="btn btn-success orange-button mx-auto my-0">Purchase Now</button>
           </Link>
 

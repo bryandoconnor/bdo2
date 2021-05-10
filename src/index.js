@@ -273,7 +273,6 @@ function MyRouter() {
           return null;
         }} />
 
-
         <Route exact path='/never-give-up-mug-zazzle' component={() => {
           window.location.href = 'https://www.zazzle.com/never_give_up_mug-168290438334133454';
           return null;
@@ -289,8 +288,28 @@ function MyRouter() {
           return null;
         }} />
 
-        <Route exact path='/wizard-books-mug-zazzle' component={() => {
-          window.location.href = 'https://www.zazzle.com/wizard_books_mug-168668872202846389';
+        <Route exact path='/grit-mug-zazzle' component={() => {
+          window.location.href = 'https://www.zazzle.com/grit_mug-168204481718969624';
+          return null;
+        }} />
+
+        <Route exact path='/grit-mens-black-shirt-zazzle' component={() => {
+          window.location.href = 'https://www.zazzle.com/grit_mens_black_t_shirt-235411528238884380';
+          return null;
+        }} />
+
+        <Route exact path='/grit-mens-white-shirt-zazzle' component={() => {
+          window.location.href = 'https://www.zazzle.com/grit_mens_white_t_shirt-235114754514561848';
+          return null;
+        }} />
+
+        <Route exact path='/grit-womens-black-shirt-zazzle' component={() => {
+          window.location.href = 'https://www.zazzle.com/grit_womens_black_t_shirt-235670526377860667';
+          return null;
+        }} />
+
+        <Route exact path='/grit-womens-white-shirt-zazzle' component={() => {
+          window.location.href = 'https://www.zazzle.com/grit_womens_white_t_shirt-235313079401115954';
           return null;
         }} />
 
