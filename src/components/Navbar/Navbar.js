@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import AuthNav from '../../auth/AuthNav';
 import '../../bootstrap.min.css';
 import '../../index.css';
 
@@ -87,7 +86,6 @@ function Navbar(props) {
               <Link to ="/gallery" className="navLink">GALLERY</Link>
               <Link to ="/about" className="navLink">ABOUT</Link>
               <Link to ="/cart" className="navLink"><i className="fas fa-shopping-cart"></i><span className="count-cart">{props.qty}</span></Link>
-              <div className="navLink p-0"><AuthNav /></div>
             </div>
           </div>
 
@@ -114,7 +112,6 @@ function Navbar(props) {
             <Link to ="/gallery" className="navLink">GALLERY</Link>
             <Link to ="/about" className="navLink">ABOUT</Link>
             <Link to ="/cart" className="navLink"><i className="fas fa-shopping-cart"></i><span className="count-cart">{props.qty}</span></Link>
-            <div className="navLink"><AuthNav /></div>
           </div>
 
         </div>
