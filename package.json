@@ -10,7 +10,7 @@
     "dotenv": "^8.6.0",
     "handlebars": "^4.7.7",
     "kind-of": "^6.0.3",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "mixin-deep": "^2.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
