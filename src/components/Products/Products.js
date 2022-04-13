@@ -4,44 +4,43 @@ import ProductsRows from './ProductsRows';
 import Cards from '../Card/Card';
 import '../Card/Card.css';
 import '../Extras/Heroes.css';
-import '../../bootstrap.min.css';
 
 function ProductsHeading() {
-  return (
-    <div>
-      <div className="ProductsHero"></div>
-      <div className="d-block row text-center">
-        <div className="col-12 p-0 text-center">
-          <h1 className="main-heading">Products</h1>
-        </div>
-      </div>
-    </div>
-  );
+	return (
+		<div>
+			<div className="ProductsHero" />
+			<div className="d-block row text-center">
+				<div className="col-12 p-0 text-center">
+					<h1 className="main-heading">Products</h1>
+				</div>
+			</div>
+		</div>
+	);
 }
 
 function ProductsBanner() {
-  return (
-    <div>
-      <div className="d-block row text-center bg-primary py-5 text-white mb-3">
-        <h2 className="products-heading">Gear N Stuff</h2>
-        <p>Click the button below to visit my store!</p>
-        <Link to="/shirts">
-          <button className="btn btn-success orange-button">Apparal & Swag</button>
-        </Link>
-      </div>
-    </div>
-  );
+	return (
+		<div>
+			<div className="d-block row text-center bg-primary py-5 text-white mb-3">
+				<h2 className="products-heading">Gear N Stuff</h2>
+				<p>Click the button below to visit my store!</p>
+				<Link to="/shirts">
+					<button className="btn btn-success orange-button">Apparal & Swag</button>
+				</Link>
+			</div>
+		</div>
+	);
 }
 
 function Products(props) {
-  return (
-    <div className="container-fluid p-0">
-      <ProductsHeading />
-      <ProductsBanner />
-      <Cards {...props} />
-      <ProductsRows {...props} />
-    </div>
-  );
+	return (
+		<div className="container-fluid p-0">
+			<ProductsHeading />
+			<ProductsBanner />
+			<Cards {...props} />
+			<ProductsRows {...props} />
+		</div>
+	);
 }
 
 export default Products;
