@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ProductsRows from './ProductsRows';
@@ -24,8 +25,8 @@ function ProductsBanner() {
 			<div className="d-block row text-center bg-primary py-5 text-white mb-3">
 				<h2 className="products-heading">Gear N Stuff</h2>
 				<p>Click the button below to visit my store!</p>
-				<Link to="/shirts">
-					<button className="btn btn-success orange-button">Apparal & Swag</button>
+				<Link to="/swag">
+					<button type="button" className="btn btn-success orange-button">Swag</button>
 				</Link>
 			</div>
 		</div>

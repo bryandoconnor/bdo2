@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable no-undef */
 import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
@@ -7,7 +8,7 @@ import Home from './components/Home/Home';
 import Products from './components/Products/Products';
 import Gallery from './components/Gallery/Gallery';
 import About from './components/About/About';
-import Shirts from './components/Shirts/Shirts';
+import Swag from './components/Swag/Swag';
 import Cart from './components/Cart/Cart';
 import ProductsContext from './contexts/ProductsContext';
 
@@ -56,7 +57,7 @@ function App() {
 				productIncludes2: "✓ Business Card Design",
 				productIncludes3: "✓ Style Guide",
 				productLogo: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Branding-icon.svg",
-				productLinkURL: "/marketing-pp"
+				productLinkURL: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6JTXU56HHYALG"
 			}
 		);
 	};
@@ -73,7 +74,7 @@ function App() {
 				productIncludes2: "✓ Professional Look",
 				productIncludes3: "✓ Vector Files",
 				productLogo: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Logos-icon.svg",
-				productLinkURL: "/logo-pp"
+				productLinkURL: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B826XEELJR6Y2"
 			}
 		);
 	};
@@ -90,7 +91,7 @@ function App() {
 				productIncludes2: "✓ Professional Templates",
 				productIncludes3: "✓ Print-ready Files",
 				productLogo: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/BusinessCards-icon.svg",
-				productLinkURL: "/businesscard-pp"
+				productLinkURL: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XHB43GC3Z8UKA"
 			}
 		);
 	};
@@ -107,7 +108,7 @@ function App() {
 				productIncludes2: "✓ Choose Style and Color Options",
 				productIncludes3: "✓ Print-ready Files",
 				productLogo: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Illustrations-icon.svg",
-				productLinkURL: "/illustration-pp"
+				productLinkURL: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KECFQC6L3UBQU"
 			}
 		);
 	};
@@ -124,7 +125,7 @@ function App() {
 				productIncludes2: "✓ Professional Template",
 				productIncludes3: "✓ Print-ready Files",
 				productLogo: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Invites-icon.svg",
-				productLinkURL: "/invite-pp"
+				productLinkURL: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BJ49P6J8N5MQL"
 			}
 		);
 	};
@@ -141,7 +142,7 @@ function App() {
 				productIncludes2: "✓ Professional UX/UI",
 				productIncludes3: "✓ Amazing Images and Icons",
 				productLogo: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Web-icon.svg",
-				productLinkURL: "/website-pp"
+				productLinkURL: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PTGDMFBKX9P6Q"
 			}
 		);
 	};
@@ -171,7 +172,6 @@ function App() {
 					<Route exact path="/" element={<Home />} />
 					
 					<Route exact path="/products" 
-					// eslint-disable-next-line react/jsx-props-no-spreading
 						element={<Products {...carts}
 							onClickEvent={chooseClick}
 							onClick1={emptyCart}
@@ -180,140 +180,13 @@ function App() {
 					
 					<Route exact path="/gallery" element={<Gallery />} />
 					<Route exact path="/about" element={<About />} />
-					<Route exact path="/shirts" element={<Shirts />} />
+					<Route exact path="/swag" element={<Swag />} />
 					<Route exact path="/cart" element={
-					// eslint-disable-next-line react/jsx-props-no-spreading
 						<Cart {...carts}
 							onClickEvent={chooseClick}
 							onClick1={emptyCart}
 						/>} 
 					/>
-					
-					<Route exact path='/facebook' element={() => {
-						window.location.href = 'https://www.facebook.com/myamazingart/';
-						return null;
-					}} />
-
-					<Route exact path='/twitter' element={() => {
-						window.location.href = 'https://twitter.com/MyAmazingArt';
-						return null;
-					}} />
-
-					<Route exact path='/youtube' element={() => {
-						window.location.href = 'https://www.youtube.com/channel/UCJDaTHvz6hPazDF37DMadWw?';
-						return null;
-					}} />
-
-					<Route exact path='/marketing-pp' element={() => {
-						window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6JTXU56HHYALG';
-						return null;
-					}} />
-
-					<Route exact path='/logo-pp' element={() => {
-						window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B826XEELJR6Y2';
-						return null;
-					}} />
-
-					<Route exact path='/businesscard-pp' element={() => {
-						window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XHB43GC3Z8UKA';
-						return null;
-					}} />
-
-					<Route exact path='/illustration-pp' element={() => {
-						window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KECFQC6L3UBQU';
-						return null;
-					}} />
-
-					<Route exact path='/invite-pp' element={() => {
-						window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BJ49P6J8N5MQL';
-						return null;
-					}} />
-
-					<Route exact path='/website-pp' element={() => {
-						window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PTGDMFBKX9P6Q';
-						return null;
-					}} />
-
-					<Route exact path='/ossies-mens-shirt-zazzle' element={() => {
-						window.location.href = 'https://www.zazzle.com/i_eat_at_ossies_mens_t_shirt-235733169565141432';
-						return null;
-					}} />
-
-					<Route exact path='/ossies-womens-shirt-zazzle' element={() => {
-						window.location.href = 'https://www.zazzle.com/i_eat_at_ossies_womens_t_shirt-235003222720023867';
-						return null;
-					}} />
-
-					<Route exact path='/ossies-kids-shirt-zazzle' element={() => {
-						window.location.href = 'https://www.zazzle.com/i_eat_at_ossies_kids_t_shirt-235149394548698012';
-						return null;
-					}} />
-
-					<Route exact path='/ossies-aprons-zazzle' element={() => {
-						window.location.href = 'https://www.zazzle.com/i_eat_at_ossies_apron-154873931354488868';
-						return null;
-					}} />
-
-					<Route exact path='/lilies-mens-shirt-zazzle' element={() => {
-						window.location.href = 'https://www.zazzle.com/consider_the_lilies_cross_mens_black_t_shirt-235974912798412078';
-						return null;
-					}} />
-
-					<Route exact path='/afraid-mens-shirt-zazzle' element={() => {
-						window.location.href = 'https://www.zazzle.com/be_not_afraid_wings_mens_black_t_shirt-235640684584076550';
-						return null;
-					}} />
-
-					<Route exact path='/lilies-womens-shirt-zazzle' element={() => {
-						window.location.href = 'https://www.zazzle.com/consider_the_lilies_cross_womens_black_t_shirt-235910854397781281';
-						return null;
-					}} />
-
-					<Route exact path='/afraid-womens-shirt-zazzle' element={() => {
-						window.location.href = 'https://www.zazzle.com/be_not_afraid_wings_womens_black_t_shirt-235276667109904535';
-						return null;
-					}} />
-
-					<Route exact path='/never-give-up-mug-zazzle' element={() => {
-						window.location.href = 'https://www.zazzle.com/never_give_up_mug-168290438334133454';
-						return null;
-					}} />
-
-					<Route exact path='/done-right-mug-zazzle' element={() => {
-						window.location.href = 'https://www.zazzle.com/a_job_worth_doin_mug-168064899396292397';
-						return null;
-					}} />
-
-					<Route exact path='/dragon-wreath-mug-zazzle' element={() => {
-						window.location.href = 'https://www.zazzle.com/dragon_wreath_mug-168772340050709168';
-						return null;
-					}} />
-
-					<Route exact path='/grit-mug-zazzle' element={() => {
-						window.location.href = 'https://www.zazzle.com/grit_mug-168204481718969624';
-						return null;
-					}} />
-
-					<Route exact path='/grit-mens-black-shirt-zazzle' element={() => {
-						window.location.href = 'https://www.zazzle.com/grit_mens_black_t_shirt-235411528238884380';
-						return null;
-					}} />
-
-					<Route exact path='/grit-mens-white-shirt-zazzle' element={() => {
-						window.location.href = 'https://www.zazzle.com/grit_mens_white_t_shirt-235114754514561848';
-						return null;
-					}} />
-
-					<Route exact path='/grit-womens-black-shirt-zazzle' element={() => {
-						window.location.href = 'https://www.zazzle.com/grit_womens_black_t_shirt-235670526377860667';
-						return null;
-					}} />
-
-					<Route exact path='/grit-womens-white-shirt-zazzle' element={() => {
-						window.location.href = 'https://www.zazzle.com/grit_womens_white_t_shirt-235313079401115954';
-						return null;
-					}} />
-			
 				</Routes>
 			</ProductsContext.Provider>
 

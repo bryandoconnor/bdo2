@@ -1,4 +1,4 @@
-const products_and_services = [
+const productsAndServices = [
 	{
 		productId: "1",
 		productLogo: "https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Branding-icon.svg",
@@ -91,4 +91,4 @@ const products_and_services = [
 	}
 ];
 
-export default products_and_services;
+export default productsAndServices;

@@ -1,5 +1,7 @@
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../../index.css';
 import Cards from '../Card/Card';
 
@@ -24,7 +26,7 @@ function Cart(props) {
 							<div>{props.productIncludes2}</div>
 							<div>{props.productIncludes3}</div>
 						</div>
-						<button className="cart-button" onClick={props.onClick1}>Clear Shopping Cart</button>
+						<button type="button" className="cart-button" onClick={props.onClick1}>Clear Shopping Cart</button>
 					</div>
 				</div>
 
@@ -36,9 +38,9 @@ function Cart(props) {
 						<div className="lg-paragraph sm-margin sm-padding">Tax: ${taxCalc}</div>
 						<hr className="hr mx-auto my-0" />
 						<div className="lg-paragraph sm-margin sm-padding">Total: ${totalCalc}</div>
-						<Link to={props.productLinkURL} target="_blank">
-							<button className="btn success-btn orange-button md-button">Proceed to Checkout</button>
-						</Link>
+						<a href={props.productLinkURL} target="_blank" rel="noreferrer">
+							<button type="button" className="btn success-btn orange-button md-button">Proceed to Checkout</button>
+						</a>
 					</div>
 				</div>
 

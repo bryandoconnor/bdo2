@@ -1,5 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../Extras/Heroes.css';
 import '../../index.css';
 
@@ -24,15 +24,15 @@ function AboutSocial() {
 			<div className="col-lg-12">
 				<h1 className="main-heading">Find Me on Social Media</h1>
 				<div className="social-div">
-					<Link to ="/facebook" target="_blank">
+					<a href="https://www.facebook.com/myamazingart/" target="_blank" rel="noreferrer" >
 						<img src="https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Facebook+Icon.svg" className="social-link-icon" alt="Facebook icon" />
-					</Link>
-					<Link to ="/twitter" target="_blank">
+					</a>
+					<a href="https://twitter.com/MyAmazingArt" target="_blank" rel="noreferrer">
 						<img src="https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Twitter+Icon.svg" className="social-link-icon" alt="Twitter icon" />
-					</Link>
-					<Link to ="/youtube" target="_blank">
+					</a>
+					<a href="https://www.youtube.com/channel/UCJDaTHvz6hPazDF37DMadWw?" target="_blank" rel="noreferrer">
 						<img src="https://bryandoconnor.s3-us-west-2.amazonaws.com/images/YouTube+Icon.svg" className="social-link-icon" alt="YouTube icon" />
-					</Link>
+					</a>
 				</div>
 			</div>
 		</div>

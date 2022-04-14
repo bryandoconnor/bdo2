@@ -1,10 +1,13 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Card.css';
-import products_and_services from '../Products/Products_and_Services';
+import productsAndServices from '../Products/ProductsAndServices';
 
 function Cards(props) {
-	const productCards = products_and_services.map((res) =>
+	const productCards = productsAndServices.map((res) =>
 		<div className="col-lg-4 col-md-4 col-sm-4 col-xs-12" key={res.productId}>
 			<Link to="/cart" className="card-link d-block text-center" id={res.productName} onClick={props.onClickEvent}>
 				<div className="card">
@@ -26,7 +29,7 @@ function Cards(props) {
 								<div>{res.productIncludes3}</div>
 							</ul>
 							<div className="text-center">
-								<button className="btn btn-success orange-button card-button mx-auto my-0">
+								<button type="button" className="btn btn-success orange-button card-button mx-auto my-0">
 									{res.productButtonText1} | {res.productPrice}
 								</button>
 							</div>
