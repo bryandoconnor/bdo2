@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable react/no-unescaped-entities */
 import React, { useState } from 'react';
 import pieces from './Pieces';
 import './Gallery.css';
